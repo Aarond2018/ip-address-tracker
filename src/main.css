@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* header Styles */
+
+
+header {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.5rem;
+  background: url("./images/pattern-bg.png");
+  background-size: cover;
+}
+
+header h2 {
+  color: #fff;
+}
+
+.form-group {
+  position: relative;
+  width: 80%;
+  max-width: 30rem;
+  margin: 1rem 0;
+  border-radius: 16px;
+}
+
+.form-group input {
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border-radius: 16px;
+  border: none;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-group input::placeholder {
+  font-family: "Rubik";
+}
+
+.form-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 3rem;
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 16px 16px 0;
+  cursor: pointer;
+}
+
+/* MapView Styles */
+#mapView {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 70vh;
+}
+
+.widthFull {
+  width: 100%;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 95%;
+  max-width: 70rem;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  height: 6.6rem;
+  z-index: 500;
+}
+
+.loading-gif {
+  position: absolute;
+  height: 1rem;
+  top: 30%;
+}
+
+
+/* Map details syles */
+
+.mapDetails {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  padding: 2rem 1rem;
+  width: 95%;
+  max-width: 70rem;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  z-index: 500;
+}
+
+
+
+.mapDetails .details-header {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 57%);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.mapDetails .details-body {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 40vh;
+  }
+  .mapDetails {
+    flex-direction: column;
+    width: 15rem;
+    max-width: 80%;
+    align-items: center;
+    padding: 1rem;
+  }
+  .mapDetails div {
+    margin-bottom: 0.5rem;
+  }
+  .mapDetails .details-header {
+    margin-bottom: 0.2rem;
+  }
+
+  .mapDetails p {
+    text-align: center;
+  }
+}
