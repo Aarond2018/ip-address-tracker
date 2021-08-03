@@ -6,9 +6,6 @@ body {
 
 /* header Styles */
 
-.App {
-  position: relative;
-}
 
 header {
   height: 30vh;
@@ -18,9 +15,6 @@ header {
   padding-top: 1.5rem;
   background: url("./images/pattern-bg.png");
   background-size: cover;
-  position: absolute;
-  top: 0;
-  width: 100%
 }
 
 header h2 {
@@ -70,7 +64,6 @@ header h2 {
   min-height: 70vh;
   display: flex;
   justify-content: center;
-  top: 30vh;
 }
 
 .leaflet-container {
