@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 export default class Map extends Component {
   render() {
     const position = [this.props.data.location.lat, this.props.data.location.lng]
+    
     return (
       <div className="widthFull">
         <MapContainer center={position} zoom={10} scrollWheelZoom={true}>
@@ -13,7 +14,7 @@ export default class Map extends Component {
           />
           <Marker position={position}>
             <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
+              {this.props.data.location.city}, {this.props.data.location.region}, {this.props.data.location.country}
             </Popup>
           </Marker>
         </MapContainer>

@@ -8,7 +8,7 @@ class Header extends Component {
         <h2>IP Address Tracker</h2>
         <form className="form-group">
           <input type="text" name="formInput" onChange={this.props.handleChange} placeholder="Search for any IP address or domain"></input>
-          <div className="btn"><img src={arrowIcon} alt="arrow-icon"></img></div>
+          <div className="btn" onClick={this.props.onSubmit}><img src={arrowIcon} alt="arrow-icon"></img></div>
         </form>
       </header>
     )
