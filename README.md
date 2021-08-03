@@ -16,4 +16,4 @@ Users should be able to:
 -See their own IP Address on the map on the initial page load
 -Search for any IP addresses or domains and see the key information and location
 
-- Live Site URL: [Add live site URL here](https://ip-address-tracker2021.netlify.app/)
+- Live Site URL: [https://ip-address-tracker2021.netlify.app/](https://ip-address-tracker2021.netlify.app/)
