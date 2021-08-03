@@ -75,6 +75,10 @@ header h2 {
   width: 100%;
 }
 
+.color-white {
+  color: #fff;
+}
+
 .loading {
   display: flex;
   justify-content: center;
@@ -82,7 +86,7 @@ header h2 {
   position: absolute;
   width: 95%;
   max-width: 70rem;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
   background: #fff;
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,.1);
@@ -107,7 +111,7 @@ header h2 {
   padding: 2rem 1rem;
   width: 95%;
   max-width: 70rem;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
   background: #fff;
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,.1);
